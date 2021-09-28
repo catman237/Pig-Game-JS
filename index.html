@@ -27,10 +27,29 @@
       </section>
 
       <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--rules">📔 Rules</button>
       <button class="btn btn--new">🔄 New game</button>
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
+      <div class="modal hidden">
+        <div class="headerContainer">
+          <h2 class="rulesHeader">Rules</h2>
+        </div>
+        <ul class="list">
+          <li>Objective: First roll 50 points wins.</li>
+          <li>
+            Roll a 1 and lose all of your current points and pass the dice.
+          </li>
+          <li>
+            By hitting hold you are keeping your current score and it will go
+            into your offical score (under player heading)
+          </li>
+          <li>Going over 50 points is okay and there will be no penalty.</li>
+          <li>Click anywhere in this modal to close it.</li>
+        </ul>
+      </div>
     </main>
+
     <script src="script.js"></script>
   </body>
 </html>

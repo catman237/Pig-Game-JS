@@ -10,7 +10,9 @@ const diceEl = document.querySelector('.dice');
 const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
- 
+const btnRules = document.querySelector('.btn--rules');
+const modal = document.querySelector('.modal');
+
 let scores = [];
 let currentScore;
 let activePlayer;
@@ -26,7 +28,6 @@ const init = () => {
   currentScore = 0;
   activePlayer = 0;
   playing = true;
-
   document.getElementById(`current--${activePlayer}`).textContent = 0;
   current0.textContent = 0;
   current1.textContent = 0;
@@ -102,3 +103,11 @@ btnHold.addEventListener('click', () => {
 
 // new game button logic RESET
 btnNew.addEventListener('click', init);
+
+btnRules.addEventListener('click', () => {
+  modal.classList.remove('hidden') 
+})
+
+modal.addEventListener('click', () => {
+  modal.classList.add('hidden')
+})

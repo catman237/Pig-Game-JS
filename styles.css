@@ -139,6 +139,10 @@ main {
   top: 46.1rem;
 }
 
+.btn--rules {
+  margin-top: 11rem;
+}
+
 .btn:active {
   transform: translate(-50%, 3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
@@ -166,6 +170,33 @@ main {
   color: #c7365f;
 }
 
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 65%;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  font-size: 2rem;
+}
+
+.list {
+  margin-top: 3rem;
+}
+
+li {
+  padding: .5rem;
+}
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
 
 .hidden {
   display: none;
